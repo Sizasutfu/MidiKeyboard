@@ -3,23 +3,40 @@
     "name": "MidiKeyboard",
     "slug": "MidiKeyboard",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0a0a0d",
+    "newArchEnabled": true,
+    "jsEngine": "hermes",
+    "splash": {
+      "backgroundColor": "#0a0a0d"
+    },
+    "plugins": [
+      "react-native-audio-api"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sizacode.MidiKeyboard"
     },
     "android": {
+      "edgeToEdgeEnabled": true,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.sizacode.MidiKeyboard"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8f45a64d-3f21-414b-9395-047229f97064"
+      }
     }
   }
 }
