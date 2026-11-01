@@ -9,7 +9,7 @@ type MidiOutput = {
 let requestMIDIAccess: ((opts?: any) => Promise<any>) | null = null;
 try {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const mod = require('@motiz88/react-native-midi');
+  const mod = require('react-native-midi-api');
   requestMIDIAccess = mod?.requestMIDIAccess ?? null;
 } catch {
   console.warn('[MIDI] Native module unavailable — running without MIDI.');
