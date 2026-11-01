@@ -13,8 +13,17 @@
       "backgroundColor": "#0a0a0d"
     },
     "plugins": [
-      "react-native-audio-api"
-     
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true,
+            "enablePngCrunchInReleaseBuilds": true,
+            "useLegacyPackaging": true
+          }
+        }
+      ]
     ],
     "ios": {
       "supportsTablet": true,
