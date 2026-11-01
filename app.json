@@ -13,8 +13,8 @@
       "backgroundColor": "#0a0a0d"
     },
     "plugins": [
-      "react-native-audio-api",
-      "./plugins/withKotlinJvmFix"
+      "react-native-audio-api"
+     
     ],
     "ios": {
       "supportsTablet": true,
