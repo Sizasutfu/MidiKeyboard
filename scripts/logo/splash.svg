@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Everything is scaled to 70% and centered -->
+  <g transform="translate(154, 154) scale(0.7)">
+    <!-- Piano Base -->
+    <rect x="212" y="312" width="600" height="400" rx="32" fill="#1f2937"/>
+    
+    <!-- White Keys -->
+    <rect x="212" y="312" width="150" height="400" fill="#ffffff"/>
+    <rect x="362" y="312" width="150" height="400" fill="#ffffff"/>
+    <rect x="512" y="312" width="150" height="400" fill="#ffffff"/>
+    <rect x="662" y="312" width="150" height="400" fill="#ffffff"/>
+    
+    <!-- Black Keys -->
+    <rect x="312" y="312" width="80" height="220" rx="16" fill="#111827"/>
+    <rect x="462" y="312" width="80" height="220" rx="16" fill="#111827"/>
+    <rect x="612" y="312" width="80" height="220" rx="16" fill="#111827"/>
+    
+    <!-- Neon Blue Waveform -->
+    <path d="M 162 512 L 212 512 L 262 400 L 312 600 L 362 450 L 412 550 L 462 350 L 512 650 L 562 400 L 612 512 L 662 512 L 712 400 L 762 600 L 812 450 L 862 512" 
+          stroke="#4a9eff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

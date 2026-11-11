@@ -2,17 +2,44 @@
   "expo": {
     "name": "MidiKeyboard",
     "slug": "MidiKeyboard",
+    "scheme": "MidiKeyboard",
     "version": "1.0.0",
     "orientation": "landscape",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "backgroundColor": "#0a0a0d",
     "newArchEnabled": true,
-    "jsEngine": "hermes",
-    "splash": {
-      "backgroundColor": "#0a0a0d"
+
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sizacode.midikeyboard"
     },
+
+    "android": {
+      "package": "com.sizacode.midikeyboard",
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0a0d",
+        "monochromeImage": "./assets/adaptive-icon-monochrome.png"
+      }
+    },
+
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+
     "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#0a0a0d"
+        }
+      ],
       [
         "expo-build-properties",
         {
@@ -25,28 +52,9 @@
         }
       ]
     ],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.sizacode.MidiKeyboard"
-    },
-    "android": {
-      "edgeToEdgeEnabled": true,
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false,
-      "package": "com.sizacode.MidiKeyboard"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "8f45a64d-3f21-414b-9395-047229f97064"
-      }
+
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
