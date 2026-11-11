@@ -30,7 +30,7 @@
     },
 
     "plugins": [
-      "expo-router",
+     
       [
         "expo-splash-screen",
         {
